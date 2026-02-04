@@ -20,8 +20,7 @@ def on_rx(text):
     
     #回传数据给主机。
     p.send("I got: ") 
-    p.send(text)
-    
+    p.send(text) 
 
 #从机接收回调函数，收到数据会进入on_rx函数。
 p.on_write(on_rx)
